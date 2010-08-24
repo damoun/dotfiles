@@ -1,0 +1,19 @@
+#!/bin/zsh
+## function for functions in /u/epitech_2014/plenar_d/cu
+## 
+## Made by damien plenard
+## Login   <plenar_d@epitech.net>
+## 
+## Started on  Tue May 25 14:07:58 2010 damien plenard
+## Last update Tue Aug 24 22:04:47 2010 damien plenard
+##
+
+clean()
+{
+    SEARCH='.'
+    if [ ${1} ]
+    then
+	SEARCH=${1}
+    fi
+    find ${SEARCH} \( -name "*~" -or -name ".*~" -or -name "\#*" \) -exec rm -fv {} \;
+}

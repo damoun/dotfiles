@@ -1,0 +1,27 @@
+#!/bin/zsh
+## alias for alias in /u/epitech_2014/plenar_d/cu
+## 
+## Made by damien plenard
+## Login   <plenar_d@epitech.net>
+## 
+## Started on  Tue May 25 14:07:58 2010 damien plenard
+## Last update Tue Aug 24 21:06:59 2010 damien plenard
+##
+
+alias ls='ls -Fh'
+alias l='ls -l'
+alias la='ls -la'
+alias ne='emacs -nw'
+alias j='jobs'
+alias reload=". ${HOME}/.zshrc"
+alias mkdir='mkdir -p'
+alias mcd='mkdir \!*; cd \!*'
+alias untar='tar -tfz'
+
+if [ ${HOST} != "anna" ]
+then
+    alias bye='kdestroy;kill -9 -1'
+    alias msg='ns_send_msg'
+else
+    alias bye='sudo shutdown now'
+fi

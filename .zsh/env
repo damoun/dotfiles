@@ -1,0 +1,26 @@
+#!/bin/zsh
+## env for env in /u/epitech_2014/plenar_d/cu
+## 
+## Made by damien plenard
+## Login   <plenar_d@epitech.net>
+## 
+## Started on  Tue May 25 14:07:58 2010 damien plenard
+## Last update Tue Aug 24 20:29:04 2010 damien plenard
+##
+
+
+export HOST=`uname -n`
+export EDITOR='emacs'
+export PAGER='most'
+
+if [ -f $HOME/.tsocks.conf ]
+then
+    export TSOCKS_CONF_FILE=${HOME}/.tsocks.conf
+fi
+
+HISTFILE="$HOME/.history"
+HISTORY=1000
+SAVEHIST=1000
+
+PROMPT='$ '
+RPROMPT=""
