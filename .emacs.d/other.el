@@ -5,7 +5,7 @@
 ;; Login   <plenar_d@epitech.net>
 ;; 
 ;; Started on  Mon Nov 30 17:17:47 2009 damien plenard
-;; Last update Sat May  8 16:25:33 2010 damien plenard
+;; Last update Wed Aug 25 11:00:41 2010 damoun
 ;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -34,7 +34,3 @@
 (setq gnus-default-posting-charset (quote iso-8859-1)
       mm-body-charset-encoding-alist '((iso-8859-1 . 8bit)
 				              (iso-8859-15 . 8bit)))
-
-(require 'ucs-tables)
-(unify-8859-on-encoding-mode 1)
-(unify-8859-on-decoding-mode 1)

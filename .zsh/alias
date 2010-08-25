@@ -5,7 +5,7 @@
 ## Login   <plenar_d@epitech.net>
 ## 
 ## Started on  Tue May 25 14:07:58 2010 damien plenard
-## Last update Tue Aug 24 21:06:59 2010 damien plenard
+## Last update Wed Aug 25 11:02:49 2010 damoun
 ##
 
 alias ls='ls -Fh'
@@ -18,7 +18,7 @@ alias mkdir='mkdir -p'
 alias mcd='mkdir \!*; cd \!*'
 alias untar='tar -tfz'
 
-if [ ${HOST} != "anna" ]
+if [ ${USER} = "plenar_d" ]
 then
     alias bye='kdestroy;kill -9 -1'
     alias msg='ns_send_msg'

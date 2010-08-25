@@ -5,7 +5,7 @@
 ## Login   <plenar_d@epitech.net>
 ## 
 ## Started on  Tue May 25 14:07:58 2010 damien plenard
-## Last update Tue Aug 24 16:47:02 2010 damien plenard
+## Last update Wed Aug 25 11:03:55 2010 damoun
 ##
 
 # Package
@@ -16,7 +16,7 @@ export PATH="${PATH}:/usr/sbin:/usr/bin:/sbin:/bin"
 if [ ${HOST} = "maya.epitech.net" -o ${HOST} = "inca.epitech.net" ]
 then
     export PATH="${PATH}:/usr/sfw/bin:/usr/sfw/sbin"
-elif [ ${HOST} != "anna" ]
+elif [ ${USER} = "plenar_d" ]
 then
 # Bocal
     export PATH="${PATH}:/usr/site/sbin:/usr/site/bin"
