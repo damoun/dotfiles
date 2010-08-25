@@ -5,9 +5,8 @@
 ## Login   <plenar_d@epitech.net>
 ## 
 ## Started on  Tue May 25 14:07:58 2010 damien plenard
-## Last update Wed Aug 25 11:03:21 2010 damoun
+## Last update Wed Aug 25 16:17:03 2010 damien plenard
 ##
-
 
 export HOST=`uname -n`
 export EDITOR='emacs'
@@ -22,5 +21,5 @@ HISTFILE="$HOME/.history"
 HISTORY=1000
 SAVEHIST=1000
 
-PROMPT='$ '
-RPROMPT=""
+PROMPT="$ "
+RPROMPT="$(prompt_info)"

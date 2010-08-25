@@ -5,8 +5,12 @@
 ## Login   <plenar_d@epitech.net>
 ## 
 ## Started on  Tue May 25 14:07:58 2010 damien plenard
-## Last update Wed Aug 25 11:08:29 2010 damoun
+## Last update Wed Aug 25 16:39:44 2010 damien plenard
 ##
+
+if [ -f $HOME/.zsh/vers ]; then
+    . $HOME/.zsh/vers
+fi
 
 if [ -f $HOME/.zsh/env ]; then
     . $HOME/.zsh/env

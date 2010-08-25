@@ -5,7 +5,7 @@
 ## Login   <plenar_d@epitech.net>
 ## 
 ## Started on  Tue May 25 14:07:58 2010 damien plenard
-## Last update Tue Aug 24 22:04:47 2010 damien plenard
+## Last update Wed Aug 25 16:37:53 2010 damien plenard
 ##
 
 clean()
@@ -16,4 +16,8 @@ clean()
 	SEARCH=${1}
     fi
     find ${SEARCH} \( -name "*~" -or -name ".*~" -or -name "\#*" \) -exec rm -fv {} \;
+}
+
+precmd() {
+    RPROMPT="$(prompt_info)"
 }

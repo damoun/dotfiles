@@ -5,7 +5,7 @@
 ## Login   <plenar_d@epitech.net>
 ## 
 ## Started on  Tue May 25 14:07:58 2010 damien plenard
-## Last update Wed Aug 25 11:02:49 2010 damoun
+## Last update Wed Aug 25 12:14:16 2010 damien plenard
 ##
 
 alias ls='ls -Fh'
@@ -17,6 +17,8 @@ alias reload=". ${HOME}/.zshrc"
 alias mkdir='mkdir -p'
 alias mcd='mkdir \!*; cd \!*'
 alias untar='tar -tfz'
+alias find='noglob find'
+
 
 if [ ${USER} = "plenar_d" ]
 then

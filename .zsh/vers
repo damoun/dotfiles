@@ -1,0 +1,61 @@
+#!/bin/zsh
+## vers for version control in /u/epitech_2014/plenar_d/cu
+## 
+## Made by damien plenard
+## Login   <plenar_d@epitech.net>
+## 
+## Started on  Tue May 25 14:07:58 2010 damien plenard
+## Last update Wed Aug 25 17:08:36 2010 damien plenard
+##
+
+# Set a nice git-prompt (calls git_status())
+git_prompt_info() {
+    local git_dir ref br;
+    git_dir=$(git rev-parse --git-dir 2> /dev/null) || return 1
+    ref=$(git symbolic-ref HEAD 2> /dev/null) || return 1
+    branch_prompt=${ref#refs/heads/}
+    if [ -n "$branch_prompt" ]; then
+	status_icon=$(git_status)
+	last_com=$(git log | grep -e "Author: " | head -n 1 | cut -d ':' -f 2 | tr -d ' ' | cut -f1 -d '<')
+	echo "$status_icon%{$fg[yellow]%}[$last_com]%{$reset_color%}(git)"
+    fi
+    return 0
+}
+# Show character if index and/or work-tree are dirty
+git_status() {
+    my_status=$(git status)
+    output=
+    if [[ "$my_status" == *"Untracked files"* ]]; then
+	output="%{$fg[green]%}+"
+    fi
+    if [[ "$my_status" == *"Changed but not updated"* ]]; then
+	output="$output%{$fg[red]%}*"
+    fi
+    echo $output
+}
+
+svn_status() {
+    my_status=$(svn status | head)
+    output=
+    if [[ "$my_status" == *"?       "* ]]; then
+	output="%{$fg[green]%}+"
+    fi
+    if [[ "$my_status" == *"M       "* ]]; then
+	output="$output%{$fg[red]%}*"
+    fi
+    echo $output
+}
+
+svn_prompt_info() {
+    svn_dir=$(svn info 2> /dev/null) || return
+    status_icon=$(svn_status)
+    last_com=$(svn info | grep -e "Last Changed Author: " | head -n 1 | cut -d ':' -f 2 | tr -d ' ')
+    echo "$status_icon%{$fg[yellow]%}[$last_com]%{$reset_color%}(svn)"
+    return 0
+}
+
+prompt_info() {
+    git_prompt_info && return
+    svn_prompt_info && return
+#    mer_prompt_info && return
+}

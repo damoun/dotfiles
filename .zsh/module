@@ -5,7 +5,7 @@
 ## Login   <plenar_d@epitech.net>
 ## 
 ## Started on  Tue May 25 14:07:58 2010 damien plenard
-## Last update Wed Aug 25 11:07:01 2010 damoun
+## Last update Wed Aug 25 14:26:35 2010 damien plenard
 ##
 
 zmodload zsh/compctl
@@ -15,3 +15,5 @@ zmodload zsh/mathfunc
 zmodload zsh/stat
 zmodload zsh/system
 zmodload zsh/zftp
+
+autoload -U colors && colors
