@@ -5,8 +5,10 @@
 ## Login   <plenar_d@epitech.net>
 ## 
 ## Started on  Tue May 25 14:07:58 2010 damien plenard
-## Last update Wed Aug 25 17:08:36 2010 damien plenard
+## Last update Wed Aug 25 23:36:08 2010 damien plenard
 ##
+
+autoload -U colors && colors
 
 # Set a nice git-prompt (calls git_status())
 git_prompt_info() {

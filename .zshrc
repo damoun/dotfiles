@@ -5,7 +5,7 @@
 ## Login   <plenar_d@epitech.net>
 ## 
 ## Started on  Tue May 25 14:07:58 2010 damien plenard
-## Last update Wed Aug 25 16:39:44 2010 damien plenard
+## Last update Wed Aug 25 23:41:00 2010 damien plenard
 ##
 
 if [ -f $HOME/.zsh/vers ]; then
