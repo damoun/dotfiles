@@ -5,7 +5,7 @@
 ;; Login   <plenar_d@epitech.net>
 ;; 
 ;; Started on  Mon Nov 30 16:46:48 2009 damien plenard
-;; Last update Sat May  8 16:31:31 2010 damien plenard
+;; Last update Fri Sep 17 10:55:47 2010 damien plenard
 ;;
 
 
@@ -38,3 +38,8 @@
 
 ;; F8 -> aller a la prochaine erreur de compilation
 (global-set-key	[f8] 'next-error)
+
+
+;; PuTTY fix. Ugly. Bad. But it works. (Good)
+(define-key global-map "\M-[1~" 'beginning-of-line)
+(define-key global-map [select] 'end-of-line)
