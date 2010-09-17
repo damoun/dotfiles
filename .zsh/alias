@@ -5,7 +5,7 @@
 ## Login   <plenar_d@epitech.net>
 ## 
 ## Started on  Tue May 25 14:07:58 2010 damien plenard
-## Last update Fri Sep 10 17:23:47 2010 damien plenard
+## Last update Fri Sep 17 10:52:15 2010 damien plenard
 ##
 
 alias ls='ls -Fh'
@@ -16,6 +16,7 @@ alias j='jobs'
 alias reload=". ${HOME}/.zshrc"
 alias mkdir='nocorrect mkdir -p'
 alias find='noglob find'
+alias gnus='emacs -f gnus'
 
 
 if [ ${USER} = "plenar_d" ]
