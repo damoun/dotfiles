@@ -16,7 +16,7 @@
 #     session.menuFile: /home/you/.fluxbox/my-menu
 [begin] (IIT)
       [exec] (xterm) {xterm /bin/zsh} 
-      [exec] (firefox) {firefox}
+      [exec] (firefox) {firefox3}
       [exec] (thunderbird) {thunderbird}
 [submenu] (Terminals)
       [exec]   (xterm) {xterm} 
@@ -27,7 +27,7 @@
 [end]
 [submenu] (Net)
 [submenu] (Browsers)
-      [exec]   (firefox) {firefox} 
+      [exec]   (firefox) {firefox3} 
       [exec]   (mozilla) {mozilla} 
       [exec]   (vncviewer) {vncviewer} 
       [exec]   (links-graphic) {links -driver x google.com} 
