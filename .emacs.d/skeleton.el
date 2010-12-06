@@ -5,7 +5,7 @@
 ;; Login   <plenar_d@epitech.net>
 ;; 
 ;; Started on  Mon Dec  7 09:56:43 2009 damien plenard
-;; Last update Mon May 10 19:31:23 2010 damien plenard
+;; Last update Mon Dec  6 20:21:40 2010 Damien Plenard
 ;;
 
 ;; Skeleton des headers protege
@@ -14,15 +14,17 @@
   ""
   '(setq str (file-name-sans-extension
 	      (file-name-nondirectory (buffer-file-name))))
-  "#ifndef __"(upcase str)"_H__\n"
-  "# define __"(upcase str)"_H__\n"
-  "\n"
-  "\n"
-  "\n"
-  "#endif /* !__"(upcase str)"_H__ */\n")
+"#ifndef __"(upcase str)"_H__
+# define __"(upcase str)"_H__
+
+
+
+#endif /* !__"(upcase str)"_H__ */\n")
 
 ;; Skeleton des main
 (define-skeleton create-main
+"Inserts a main function."
+""
 "#include <stdlib.h>
 #include <sys/types.h>
 
@@ -35,7 +37,7 @@
 int			main(void)
 {
 #if defined (DEBUG)
-  _malloc_options = "Z";
+  _malloc_options = \"Z\";
 #endif
 
   return (EXIT_SUCCESS);
@@ -44,6 +46,8 @@ int			main(void)
 
 ;; Skeleton des Makefiles
 (define-skeleton create-makefile
+"Create a great makefile :p."
+""
 "## Name of project
 NAME		= 
 
@@ -101,6 +105,9 @@ re		: fclean all
 
 .c.o		: 
 		  $(CC) $(CFLAGS) -o $@ -c $< -D$(V)
+
+check-syntax	:
+		  $(CC) $(CFLAGS) -o /dev/null -c $(CHK_SOURCES)
 
 tag		:
 		  $(ETAGS) $(INCDIR)/*.h $(SRC)
