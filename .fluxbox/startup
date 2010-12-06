@@ -44,17 +44,15 @@ xset -b
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
 
+# clavier fr
+setxkbmap fr&
+
 # fond d'ecran
-fbsetbg -l ~/.fluxbox/backgrounds/Firefox_wallpaper.png
+fbsetbg -l&
 
-## conky
-conky &
-
-## kill
-pkill xterm
-sleep 0.1
-xterm zsh &
+pidgin&
+xterm tmux&
 
 #exec /usr/local/bin/fluxbox
 # or if you want to keep a log:
-exec /usr/local/bin/fluxbox -log "/u/epitech_2014/plenar_d/cu/.fluxbox/log"
+exec /usr/local/bin/fluxbox -log ".fluxbox/log"

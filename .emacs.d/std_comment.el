@@ -5,7 +5,7 @@
 ;; Login   <fred@epita.fr>
 ;; 
 ;; Started on  Thu Sep  9 23:34:05 1993 Frederic Denis
-;; Last update Tue May 18 19:27:00 2010 damien plenard
+;; Last update Sun Oct 24 21:59:36 2010 Damien Plenard
 ;;
 ;; Based on Comment routines by Isaac
 ;;
@@ -29,11 +29,8 @@
       header-last	"Last update "
       header-for	" for "
       header-in		" in "
-      domaine-name	"epitech.net")
-(if (setq user-nickname (getenv "USER_NICKNAME"))
-    t 
-  (setq user-nickname (user-full-name))
-)
+      domaine-name	"epitech.net"
+      user-nickname "Damien Plenard")
 
 (setq write-file-hooks (cons 'update-std-header write-file-hooks))
 
@@ -113,7 +110,7 @@
   "Puts a standard header at the beginning of the file.\n(According to mode)"
   (interactive)
   (goto-char (point-min))
-  (let ((projname "colle")(location "tiuti"))
+  (let ((projname "")(location "tiuti"))
     (setq location (getenv "PWD"))
     (insert-string (std-get 'cs))
     (newline)
@@ -131,7 +128,7 @@
     (insert-string (concat (std-get 'cc)
 			   header-login
 			   header-login-beg
-			   (getenv "USER")
+			   "plenar_d"
 			   header-login-mid
 			   domaine-name
 			   header-login-end))

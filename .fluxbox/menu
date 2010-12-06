@@ -15,7 +15,7 @@
 #   you can change the menu name in .fluxbox/init to:
 #     session.menuFile: /home/you/.fluxbox/my-menu
 [begin] (IIT)
-      [exec] (xterm) {xterm /bin/zsh} 
+      [exec] (xterm) {xterm /usr/local/bin/tmux} 
       [exec] (firefox) {firefox3}
       [exec] (thunderbird) {thunderbird}
 [submenu] (Terminals)

@@ -1,0 +1,31 @@
+------------------------------------------
+Log File: .fluxbox/log
+Fluxbox version: 1.1.1
+Compiled: Jun 30 2010 22:35:32
+Compiler: GCC
+Compiler version: 4.2.1 20070719  [FreeBSD]
+
+Defaults:
+menu: /usr/local/share/fluxbox/menu
+style: /usr/local/share/fluxbox/styles/bloe
+keys: /usr/local/share/fluxbox/keys
+init: /usr/local/share/fluxbox/init
+nls: /usr/local/share/fluxbox/nls
+
+Compiled options (- => disabled): 
+-DEBUG
+EWMH
+GNOME
+IMLIB2
+NLS
+REMEMBER
+RENDER
+SHAPE
+SLIT
+TOOLBAR
+XFT
+XINERAMA
+XMB
+XPM
+
+------------------------------------------
