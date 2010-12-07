@@ -27,7 +27,7 @@ a.out
 .gclient
 .gconfd/
 .gstreamer-0.10/
-.history
+.histo*
 .ido.last
 .macromedia/
 .mail_aliases
