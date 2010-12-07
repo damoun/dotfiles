@@ -4,7 +4,7 @@
 ;; Login   <plenar_d@epitech.net>
 ;;
 ;; Started on  Tue Oct 27 11:55:57 2009 damien plenard
-;; Last update Mon Dec  6 20:02:42 2010 Damien Plenard
+;; Last update Tue Dec  7 16:57:22 2010 Damien Plenard
 ;;        
 
 ;; ECB
@@ -20,6 +20,9 @@
 
 (load-file "~/.emacs.d/dominating-file.el")
 (load-file "~/.emacs.d/flymake.el")
+
+;; Javascript
+(load-file "~/.emacs.d/javascript.el")
 
 ;; Les skeleton
 (load-file "~/.emacs.d/skeleton.el")

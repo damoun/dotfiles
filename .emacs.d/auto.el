@@ -5,7 +5,7 @@
 ;; Login   <plenar_d@epitech.net>
 ;; 
 ;; Started on  Mon Dec  7 09:58:08 2009 damien plenard
-;; Last update Mon Dec  6 19:44:24 2010 Damien Plenard
+;; Last update Tue Dec  7 16:59:51 2010 Damien Plenard
 ;;
 
 ;; Mise en place du header d'un fichier (auto)
@@ -45,3 +45,18 @@
 	  (lambda () (flymake-mode t)))
 (add-hook 'c++-mode-hook 
 	  (lambda () (flymake-mode t)))
+
+;; flymake error in TTY
+(defun next-flymake-error ()
+  (interactive)
+  (let ((err-buf nil))
+    (condition-case err
+        (setq err-buf (next-error-find-buffer))
+      (error))
+    (if err-buf
+        (next-error)
+      (progn
+	(flymake-goto-next-error)
+	(let ((err (get-char-property (point) 'help-echo)))
+	  (when err
+	    (message err)))))))

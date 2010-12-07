@@ -5,7 +5,7 @@
 ;; Login   <plenar_d@epitech.net>
 ;; 
 ;; Started on  Mon Dec  7 09:56:43 2009 damien plenard
-;; Last update Mon Dec  6 20:21:40 2010 Damien Plenard
+;; Last update Tue Dec  7 15:39:03 2010 Damien Plenard
 ;;
 
 ;; Skeleton des headers protege
@@ -92,7 +92,7 @@ $(NAME)_DEBUG	: $(OBJ)
 		  $(CC) -o $(NAME) $(OBJ) $(LDFLAGS)
 
 clean		:
-		  -@$(RM) $(OBJ) \#*\# *~
+		  -@$(RM) $(OBJ)
 
 all		: $(NAME)_$(V)
 
@@ -107,7 +107,8 @@ re		: fclean all
 		  $(CC) $(CFLAGS) -o $@ -c $< -D$(V)
 
 check-syntax	:
-		  $(CC) $(CFLAGS) -o /dev/null -c $(CHK_SOURCES)
+		  $(CC) $(CFLAGS) -o null -c $(CHK_SOURCES)
+		  -@$(RM) null
 
 tag		:
 		  $(ETAGS) $(INCDIR)/*.h $(SRC)

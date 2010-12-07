@@ -5,7 +5,7 @@
 ;; Login   <plenar_d@epitech.net>
 ;; 
 ;; Started on  Mon Nov 30 17:17:47 2009 damien plenard
-;; Last update Wed Aug 25 11:00:41 2010 damoun
+;; Last update Tue Dec  7 15:36:32 2010 Damien Plenard
 ;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -34,3 +34,6 @@
 (setq gnus-default-posting-charset (quote iso-8859-1)
       mm-body-charset-encoding-alist '((iso-8859-1 . 8bit)
 				              (iso-8859-15 . 8bit)))
+;; backspace for linux
+(keyboard-translate ?\C-h ?\C-?) 
+(keyboard-translate ?\C-? ?\C-h)

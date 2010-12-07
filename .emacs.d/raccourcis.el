@@ -5,7 +5,7 @@
 ;; Login   <plenar_d@epitech.net>
 ;; 
 ;; Started on  Mon Nov 30 16:46:48 2009 damien plenard
-;; Last update Fri Sep 17 10:55:47 2010 damien plenard
+;; Last update Tue Dec  7 15:33:22 2010 Damien Plenard
 ;;
 
 
@@ -26,6 +26,9 @@
 
 ;; F3 : lance le man sur le mot ou se trouve le curseur
 (global-set-key [f3] 'vectra-man-on-word)
+
+;; F5 -> flymake display error
+(global-set-key [f5] 'next-flymake-error)
 
 ;; F6 -> compiler
 (setq compilation-window-height 10)
