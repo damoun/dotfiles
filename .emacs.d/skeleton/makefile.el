@@ -15,6 +15,7 @@ ARCH		= `uname -p`
 SRCDIR		= src
 INCDIR		= include
 LIBDIR		= lib
+DOCDIR		= doc
 
 ## Source
 SRC		= $(SRCDIR)/main.c
@@ -37,31 +38,35 @@ OFLAGS_DEBUG	= -ggdb
 OFLAGS_RELEASE	= -O2 -fomit-frame-pointer
 WFLAGS		= -W -Wall -Werror -Wstrict-prototypes -ansi -pedantic
 IFLAGS		= -I$(INCDIR)
-CFLAGS		+= $(WFLAGS) $(IFLAGS) $(OFLAGS_$(V))
+DFLAGS		= -D(V)
+CFLAGS		+= $(WFLAGS) $(IFLAGS) $(OFLAGS_$(V)) $(DFLAGS)
 LDFLAGS		+= -L$(LIBDIR)/ $(LIBS)
 
 ## Rules
-$(NAME)_DEBUG	: $(OBJ)
+$(NAME)		: $(OBJ)
 		  $(CC) -o $(NAME) $(OBJ) $(LDFLAGS)
 
 clean		:
-		  -@$(RM) $(OBJ)
+		  -$(RM) $(OBJ)
 
-all		: $(NAME)_$(V)
+all		: $(NAME)
 
 fclean		: clean
-		  -@$(RM) $(NAME)
+		  -$(RM) $(NAME)
 
 re		: fclean all
 
 .PHONY		: all clean re
 
 .c.o		: 
-		  $(CC) $(CFLAGS) -o $@ -c $< -D$(V)
+		  $(CC) $(CFLAGS) -o $@ -c $<
 
 check-syntax	:
 		  $(CC) $(CFLAGS) -o null -c $(CHK_SOURCES)
 		  -@$(RM) null
+
+man		:
+		  -$(READ) $(DOCDIR)/man
 
 tag		:
 		  $(ETAGS) $(INCDIR)/*.h $(SRC)
