@@ -1,0 +1,43 @@
+if ()
+int
+char
+void
+NULL
+include
+define
+stdlib.h>
+unsigned
+while ()
+return ();
+struct
+union
+typedef
+float
+double
+sizeof()
+unistd.h>
+strlen()
+strcmp()
+strncmp()
+strcat();
+strncat();
+strcpy();
+strncpy();
+memset();
+printf();
+xmalloc()
+xcalloc()
+free()
+main ()
+break
+continue
+else
+static
+const
+signed
+extern
+malloc()
+exit();
+EXIT_FAILURE
+EXIT_SUCCESS
+size_t
