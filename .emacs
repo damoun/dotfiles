@@ -23,6 +23,11 @@
 ;; CEDET
 (load "~/.emacs.d/cedet/common/cedet.el")
 
+;; ECB
+;; (add-to-list 'load-path
+;; 	     "~/.emacs.d/ecb/")
+;; (require init-ecb)
+
 ;; Auto-complete
 (load "~/.emacs.d/auto-complete/popup.el")
 (load "~/.emacs.d/auto-complete/auto-complete.el")

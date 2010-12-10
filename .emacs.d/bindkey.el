@@ -11,6 +11,9 @@
 ;; F3: man
 (global-set-key [f3] 'vectra-man-on-word)
 
+;; F4: find reference
+(global-set-key [f4] 'semantic-symref)
+
 ;; F5: flymake display error
 (global-set-key [f5] 'next-flymake-error)
 
