@@ -5,7 +5,7 @@
 ## Login   <plenar_d@epitech.net>
 ## 
 ## Started on  Tue May 25 14:07:58 2010 damien plenard
-## Last update Tue Aug 24 22:38:18 2010 damien plenard
+## Last update Fri Dec 10 20:05:36 2010 Damien Plenard
 ##
 
 bindkey -e
@@ -24,13 +24,32 @@ function zkbd_file() {
     return 1
 }
 
-[[ ! -d ~/.zkbd ]] && mkdir ~/.zkbd
-keyfile=$(zkbd_file)
-ret=$?
-if [[ ${ret} -ne 0 ]]; then
-    zkbd
-    keyfile=$(zkbd_file)
-    ret=$?
+if [ ${TERM} = "xterm" ] || [ ${TERM} = "screen" ]
+then
+    key[F1]='^[OP'
+    key[F2]='^[OQ'
+    key[F3]='^[OR'
+    key[F4]='^[OS'
+    key[F5]='^[[15~'
+    key[F6]='^[[17~'
+    key[F7]='^[[18~'
+    key[F8]='^[[19~'
+    key[F9]='^[[20~'
+    key[F10]='^[[21~'
+    key[F11]='^[[23~'
+    key[F12]='^[[24~'
+    key[Backspace]='^H'
+    key[Insert]='^[[2~'
+    key[Home]='^[[H'
+    key[PageUp]='^[[5~'
+    key[Delete]='^[[3~'
+    key[End]='^[[F'
+    key[PageDown]='^[[6~'
+    key[Up]='^[[A'
+    key[Left]='^[[D'
+    key[Down]='^[[B'
+    key[Right]='^[[C'
+    key[Menu]='^[[29~'
 fi
 if [[ ${ret} -eq 0 ]] ; then
     source "${keyfile}"
