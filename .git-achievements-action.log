@@ -56,3 +56,37 @@ add .git-achievements-action.log
 Date: lundi 13 décembre 2010, 12:48:51 (UTC+0100)
 add .git-achievements.log
 Date: lundi 13 décembre 2010, 12:49:20 (UTC+0100)
+commit -am add git-achievements log
+Date: lundi 13 décembre 2010, 12:49:37 (UTC+0100)
+push
+Date: lundi 13 décembre 2010, 12:49:46 (UTC+0100)
+achievements -p
+Date: lundi 13 décembre 2010, 12:50:03 (UTC+0100)
+status
+Date: lundi 13 décembre 2010, 12:51:36 (UTC+0100)
+commit -am update
+Date: lundi 13 décembre 2010, 12:52:10 (UTC+0100)
+push
+Date: lundi 13 décembre 2010, 12:52:17 (UTC+0100)
+commit -am fix auto push
+Date: lundi 13 décembre 2010, 13:00:17 (UTC+0100)
+push
+Date: lundi 13 décembre 2010, 13:00:26 (UTC+0100)
+achievements -p
+Date: lundi 13 décembre 2010, 13:01:08 (UTC+0100)
+achievements -p
+Date: lundi 13 décembre 2010, 13:04:22 (UTC+0100)
+config --global achievement.upload true
+Date: lundi 13 décembre 2010, 13:05:57 (UTC+0100)
+config --global achievement.upload
+Date: lundi 13 décembre 2010, 13:06:00 (UTC+0100)
+achievements -p
+Date: lundi 13 décembre 2010, 13:06:24 (UTC+0100)
+clone git@github.com:Damoun/fivahl.git
+Date: lundi 13 décembre 2010, 14:39:16 (UTC+0100)
+status
+Date: lundi 13 décembre 2010, 14:50:45 (UTC+0100)
+status
+Date: lundi 13 décembre 2010, 14:55:44 (UTC+0100)
+status
+Date: lundi 13 décembre 2010, 16:30:06 (UTC+0100)
