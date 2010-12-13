@@ -5,7 +5,7 @@
 ## Login   <plenar_d@epitech.net>
 ## 
 ## Started on  Tue May 25 14:07:58 2010 damien plenard
-## Last update Fri Sep 17 10:56:14 2010 damien plenard
+## Last update Mon Dec 13 10:40:31 2010 Damien Plenard
 ##
 
 alias ls='ls -Fh'
@@ -13,16 +13,18 @@ alias l='ls -l'
 alias la='ls -la'
 alias ne='emacs -nw'
 alias j='jobs'
-alias reload=". ${HOME}/.zshrc"
+alias grep="grep --color=auto"
 alias mkdir='nocorrect mkdir -p'
 alias find='noglob find'
-alias gnus='emacs -f gnus'
 
+alias reload="source ~/.zshrc && echo \"$fg[green]Sourced ~/.zshrc$fg[default]\""
+alias gnus='emacs -f gnus'
+alias tmux="if tmux has; then tmux attach; else tmux new; fi"
 
 if [ ${USER} = "plenar_d" ]
 then
     alias bye='kdestroy;kill -9 -1'
     alias msg='ns_send_msg'
 else
-    alias bye='sudo shutdown now'
+    alias bye='kill -9 -1'
 fi
