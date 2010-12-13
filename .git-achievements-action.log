@@ -1,0 +1,58 @@
+help
+Date: lundi 13 décembre 2010, 12:08:17 (UTC+0100)
+achievements --help
+Date: lundi 13 décembre 2010, 12:10:35 (UTC+0100)
+commit -am git-achievements add to zsh
+Date: lundi 13 décembre 2010, 12:11:12 (UTC+0100)
+push
+Date: lundi 13 décembre 2010, 12:11:25 (UTC+0100)
+status
+Date: lundi 13 décembre 2010, 12:13:35 (UTC+0100)
+help
+Date: lundi 13 décembre 2010, 12:21:22 (UTC+0100)
+achievements --help
+Date: lundi 13 décembre 2010, 12:21:34 (UTC+0100)
+achievements -p
+Date: lundi 13 décembre 2010, 12:21:43 (UTC+0100)
+add achievements.upload
+Date: lundi 13 décembre 2010, 12:22:59 (UTC+0100)
+commit -am add auto upload achievement
+Date: lundi 13 décembre 2010, 12:23:21 (UTC+0100)
+push
+Date: lundi 13 décembre 2010, 12:23:40 (UTC+0100)
+--help
+Date: lundi 13 décembre 2010, 12:24:04 (UTC+0100)
+achievements --help
+Date: lundi 13 décembre 2010, 12:24:19 (UTC+0100)
+achievements -p
+Date: lundi 13 décembre 2010, 12:24:24 (UTC+0100)
+rm achievements.upload
+Date: lundi 13 décembre 2010, 12:29:22 (UTC+0100)
+config achievements.upload true
+Date: lundi 13 décembre 2010, 12:29:51 (UTC+0100)
+achievements -p
+Date: lundi 13 décembre 2010, 12:30:11 (UTC+0100)
+status
+Date: lundi 13 décembre 2010, 12:30:43 (UTC+0100)
+commit -am rm file
+Date: lundi 13 décembre 2010, 12:31:13 (UTC+0100)
+push
+Date: lundi 13 décembre 2010, 12:31:20 (UTC+0100)
+status
+Date: lundi 13 décembre 2010, 12:32:43 (UTC+0100)
+achievements --help$
+Date: lundi 13 décembre 2010, 12:44:14 (UTC+0100)
+achievements -p
+Date: lundi 13 décembre 2010, 12:44:24 (UTC+0100)
+commit -am check if git-achievements is here
+Date: lundi 13 décembre 2010, 12:44:54 (UTC+0100)
+push
+Date: lundi 13 décembre 2010, 12:45:05 (UTC+0100)
+achievements -p
+Date: lundi 13 décembre 2010, 12:45:36 (UTC+0100)
+achievements -p
+Date: lundi 13 décembre 2010, 12:46:14 (UTC+0100)
+add .git-achievements-action.log
+Date: lundi 13 décembre 2010, 12:48:51 (UTC+0100)
+add .git-achievements.log
+Date: lundi 13 décembre 2010, 12:49:20 (UTC+0100)
