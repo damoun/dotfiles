@@ -5,7 +5,7 @@
 ## Login   <plenar_d@epitech.net>
 ## 
 ## Started on  Tue May 25 14:07:58 2010 damien plenard
-## Last update Mon Dec 13 12:10:27 2010 Damien Plenard
+## Last update Mon Dec 13 12:43:46 2010 Damien Plenard
 ##
 
 # Package
@@ -13,8 +13,11 @@ export PATH="/usr/local/sbin:/usr/local/bin"
 # System
 export PATH="${PATH}:/usr/sbin:/usr/bin:/sbin:/bin"
 
+if [ -d ~/.git-achievements ]
+then
 # git-achivement
-export PATH="${PATH}:${HOME}/.git-achievements"
+    export PATH="${PATH}:${HOME}/.git-achievements"
+fi
 
 if [ ${HOST} = "maya.epitech.net" -o ${HOST} = "inca.epitech.net" ]
 then
