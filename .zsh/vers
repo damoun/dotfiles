@@ -5,7 +5,7 @@
 ## Login   <plenar_d@epitech.net>
 ## 
 ## Started on  Tue May 25 14:07:58 2010 damien plenard
-## Last update Wed Aug 25 23:36:08 2010 damien plenard
+## Last update Mon Dec 13 12:06:14 2010 Damien Plenard
 ##
 
 autoload -U colors && colors
@@ -13,19 +13,19 @@ autoload -U colors && colors
 # Set a nice git-prompt (calls git_status())
 git_prompt_info() {
     local git_dir ref br;
-    git_dir=$(git rev-parse --git-dir 2> /dev/null) || return 1
-    ref=$(git symbolic-ref HEAD 2> /dev/null) || return 1
+    git_dir=$(\git rev-parse --git-dir 2> /dev/null) || return 1
+    ref=$(\git symbolic-ref HEAD 2> /dev/null) || return 1
     branch_prompt=${ref#refs/heads/}
     if [ -n "$branch_prompt" ]; then
 	status_icon=$(git_status)
-	last_com=$(git log | grep -e "Author: " | head -n 1 | cut -d ':' -f 2 | tr -d ' ' | cut -f1 -d '<')
+	last_com=$(\git log | grep -e "Author: " | head -n 1 | cut -d ':' -f 2 | tr -d ' ' | cut -f1 -d '<')
 	echo "$status_icon%{$fg[yellow]%}[$last_com]%{$reset_color%}(git)"
     fi
     return 0
 }
 # Show character if index and/or work-tree are dirty
 git_status() {
-    my_status=$(git status)
+    my_status=$(\git status)
     output=
     if [[ "$my_status" == *"Untracked files"* ]]; then
 	output="%{$fg[green]%}+"

@@ -5,7 +5,7 @@
 ## Login   <plenar_d@epitech.net>
 ## 
 ## Started on  Tue May 25 14:07:58 2010 damien plenard
-## Last update Mon Dec 13 10:40:31 2010 Damien Plenard
+## Last update Mon Dec 13 12:09:51 2010 Damien Plenard
 ##
 
 alias ls='ls -Fh'
@@ -16,6 +16,7 @@ alias j='jobs'
 alias grep="grep --color=auto"
 alias mkdir='nocorrect mkdir -p'
 alias find='noglob find'
+alias git="git-achievements"
 
 alias reload="source ~/.zshrc && echo \"$fg[green]Sourced ~/.zshrc$fg[default]\""
 alias gnus='emacs -f gnus'
