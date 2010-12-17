@@ -98,3 +98,147 @@ push
 Date: lundi 13 décembre 2010, 16:30:51 (UTC+0100)
 status
 Date: lundi 13 décembre 2010, 16:30:54 (UTC+0100)
+status
+Date: mardi 14 décembre 2010, 10:44:38 (UTC+0100)
+status
+Date: mardi 14 décembre 2010, 10:44:45 (UTC+0100)
+clone git@github.com:Damoun/mytweets.git
+Date: mardi 14 décembre 2010, 10:45:08 (UTC+0100)
+pull
+Date: mardi 14 décembre 2010, 10:54:34 (UTC+0100)
+status
+Date: mardi 14 décembre 2010, 11:19:11 (UTC+0100)
+add backup/
+Date: mardi 14 décembre 2010, 11:27:47 (UTC+0100)
+branch backup
+Date: mardi 14 décembre 2010, 11:30:49 (UTC+0100)
+branch
+Date: mardi 14 décembre 2010, 11:34:11 (UTC+0100)
+rm -r backup/
+Date: mardi 14 décembre 2010, 11:34:49 (UTC+0100)
+achievements
+Date: mardi 14 décembre 2010, 11:35:38 (UTC+0100)
+achievements -l
+Date: mardi 14 décembre 2010, 11:35:41 (UTC+0100)
+status
+Date: mardi 14 décembre 2010, 11:35:57 (UTC+0100)
+commit -am clean
+Date: mardi 14 décembre 2010, 11:36:07 (UTC+0100)
+push
+Date: mardi 14 décembre 2010, 11:36:13 (UTC+0100)
+checkout backup
+Date: mardi 14 décembre 2010, 11:36:27 (UTC+0100)
+status
+Date: mardi 14 décembre 2010, 11:37:41 (UTC+0100)
+add my_faves.json my_mentions.json my_tweets.json
+Date: mardi 14 décembre 2010, 11:37:47 (UTC+0100)
+status
+Date: mardi 14 décembre 2010, 11:37:59 (UTC+0100)
+checkout master
+Date: mardi 14 décembre 2010, 11:38:21 (UTC+0100)
+status
+Date: mardi 14 décembre 2010, 11:39:17 (UTC+0100)
+reset
+Date: mardi 14 décembre 2010, 11:39:21 (UTC+0100)
+status
+Date: mardi 14 décembre 2010, 11:39:25 (UTC+0100)
+checkout backup
+Date: mardi 14 décembre 2010, 11:39:43 (UTC+0100)
+rm -r backup/
+Date: mardi 14 décembre 2010, 11:40:11 (UTC+0100)
+rm -r fetch.py
+Date: mardi 14 décembre 2010, 11:40:17 (UTC+0100)
+rm -r README.mdown
+Date: mardi 14 décembre 2010, 11:40:20 (UTC+0100)
+status
+Date: mardi 14 décembre 2010, 11:40:29 (UTC+0100)
+commit -am clean
+Date: mardi 14 décembre 2010, 11:41:04 (UTC+0100)
+status
+Date: mardi 14 décembre 2010, 11:42:19 (UTC+0100)
+add my_faves.json my_mentions.json my_tweets.json
+Date: mardi 14 décembre 2010, 11:42:39 (UTC+0100)
+commit -am add backup
+Date: mardi 14 décembre 2010, 11:42:50 (UTC+0100)
+checkout master
+Date: mardi 14 décembre 2010, 11:42:59 (UTC+0100)
+checkout backup
+Date: mardi 14 décembre 2010, 11:44:05 (UTC+0100)
+push
+Date: mardi 14 décembre 2010, 11:44:38 (UTC+0100)
+status
+Date: mardi 14 décembre 2010, 11:45:40 (UTC+0100)
+push origin backup
+Date: mardi 14 décembre 2010, 11:46:26 (UTC+0100)
+push origin :old-faithful
+Date: mardi 14 décembre 2010, 11:48:44 (UTC+0100)
+checkout master
+Date: mardi 14 décembre 2010, 11:49:31 (UTC+0100)
+commit -am complete the README
+Date: mardi 14 décembre 2010, 11:57:59 (UTC+0100)
+push
+Date: mardi 14 décembre 2010, 11:58:06 (UTC+0100)
+branch
+Date: mardi 14 décembre 2010, 11:59:02 (UTC+0100)
+branch -r
+Date: mardi 14 décembre 2010, 11:59:05 (UTC+0100)
+checkout gh-pages
+Date: mardi 14 décembre 2010, 12:51:36 (UTC+0100)
+push origin :master
+Date: mardi 14 décembre 2010, 12:51:59 (UTC+0100)
+commit -am add replay button
+Date: mardi 14 décembre 2010, 13:34:00 (UTC+0100)
+push
+Date: mardi 14 décembre 2010, 13:35:23 (UTC+0100)
+status
+Date: mardi 14 décembre 2010, 13:35:37 (UTC+0100)
+init
+Date: mardi 14 décembre 2010, 13:51:47 (UTC+0100)
+clone git@github.com:Damoun/damoun.github.com.git
+Date: mardi 14 décembre 2010, 14:04:56 (UTC+0100)
+add style.css
+Date: mardi 14 décembre 2010, 14:46:21 (UTC+0100)
+commit -am split css and html, valid html and css
+Date: mardi 14 décembre 2010, 14:46:56 (UTC+0100)
+push
+Date: mardi 14 décembre 2010, 14:47:05 (UTC+0100)
+status
+Date: mardi 14 décembre 2010, 16:16:35 (UTC+0100)
+status
+Date: mardi 14 décembre 2010, 16:18:08 (UTC+0100)
+status
+Date: mercredi 15 décembre 2010, 10:47:33 (UTC+0100)
+status
+Date: jeudi 16 décembre 2010, 16:09:29 (UTC+0100)
+reset
+Date: vendredi 17 décembre 2010, 09:43:39 (UTC+0100)
+reset
+Date: vendredi 17 décembre 2010, 09:44:07 (UTC+0100)
+status
+Date: vendredi 17 décembre 2010, 09:44:12 (UTC+0100)
+reset
+Date: vendredi 17 décembre 2010, 09:44:21 (UTC+0100)
+reset
+Date: vendredi 17 décembre 2010, 09:44:24 (UTC+0100)
+reset HEAD
+Date: vendredi 17 décembre 2010, 09:49:52 (UTC+0100)
+status
+Date: vendredi 17 décembre 2010, 09:49:56 (UTC+0100)
+reset HEAD --hard
+Date: vendredi 17 décembre 2010, 09:50:14 (UTC+0100)
+status
+Date: vendredi 17 décembre 2010, 09:50:24 (UTC+0100)
+pull
+Date: vendredi 17 décembre 2010, 09:50:36 (UTC+0100)
+commit -am delete Finnish hello & indent with emacs
+Date: vendredi 17 décembre 2010, 09:53:24 (UTC+0100)
+push
+Date: vendredi 17 décembre 2010, 09:53:33 (UTC+0100)
+add css images/ js
+Date: vendredi 17 décembre 2010, 10:05:14 (UTC+0100)
+commit -am refactoring
+Date: vendredi 17 décembre 2010, 10:05:22 (UTC+0100)
+push
+Date: vendredi 17 décembre 2010, 10:05:29 (UTC+0100)
+status
+Date: vendredi 17 décembre 2010, 16:04:47 (UTC+0100)
