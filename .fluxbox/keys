@@ -30,7 +30,7 @@ Control Shift Left	:MoveLeft +10
 Control Shift Up	:MoveUp +5
 None Menu		:RootMenu
 Control SHIFT Delete	:Close
-Control Insert		:ExecCommand xterm /usr/local/bin/tmux
+Control Insert		:ExecCommand xterm /usr/bin/tmux
 F11			:Fullscreen
 Mod1 Shift F1		:Workspace 1
 Mod1 Shift F2		:Workspace 2

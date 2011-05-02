@@ -5,7 +5,7 @@
 ## Login   <plenar_d@epitech.net>
 ## 
 ## Started on  Tue May 25 14:07:58 2010 damien plenard
-## Last update Mon Dec 13 12:44:03 2010 Damien Plenard
+## Last update Mon May  2 17:27:25 2011 Damien Plenard
 ##
 
 alias ls='ls -Fh'
@@ -13,7 +13,7 @@ alias l='ls -l'
 alias la='ls -la'
 alias ne='emacs -nw'
 alias j='jobs'
-alias grep="grep --color=auto"
+alias grep="grep"
 alias mkdir='nocorrect mkdir -p'
 alias find='noglob find'
 
