@@ -1,6 +1,7 @@
 #!/bin/bash
 
 mkdir -p "$INSTALL_PATH/.jogsoul.d/"
+cp jogsoul.pl "$INSTALL_PATH/.jogsoul.d/"
 
 echo ":server" > "$INSTALL_PATH/.jogsoul"
 echo "ns-server.epita.fr" >> "$INSTALL_PATH/.jogsoul"
