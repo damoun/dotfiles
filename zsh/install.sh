@@ -2,5 +2,8 @@
 
 install_package "zsh"
 
-cp zsh $INSTALL_PACKAGE/.zsh
-cp -r zsh.d $INSTALL_PACKAGE/.zsh.d
+cp zshrc $INSTALL_PATH/.zshrc
+rm -rf $INSTALL_PATH/.zsh.d
+cp -r zsh.d $INSTALL_PATH/.zsh.d
+
+chsh -s /bin/zsh

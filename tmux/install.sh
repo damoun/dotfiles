@@ -2,4 +2,4 @@
 
 install_package "tmux"
 
-cp tmux.conf $INSTALL_PACKAGE/.tmux.conf
+cp tmux.conf $INSTALL_PATH/.tmux.conf

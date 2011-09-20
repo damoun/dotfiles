@@ -3,6 +3,7 @@
 # on https://github.com/arcanin/MiniDump
 
 NAME="PersonalConfig"
+HOME_SCRIPT=`pwd`
 
 function init_install_path
 {
@@ -37,6 +38,9 @@ function install_package
     elif ( hash "pkg_add" >& /dev/null )
     then
 	sudo pkg_add -r "$1" >& /dev/null
+    else
+	echo "Can't find package installer"
+	exit 1
     fi
 }
 
@@ -54,7 +58,9 @@ function exec_directory
 	if [[ -d $dir && -x "$dir/install.sh" ]]
 	then
 	    echo "=== Install $dir ==="
-	    source "$dir/install.sh"
+	    cd $dir
+	    source install.sh
+	    cd $HOME_SCRIPT
 	    echo "=== $dir installed ==="
 	fi
     done
