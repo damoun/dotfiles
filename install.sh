@@ -48,13 +48,16 @@ function request_user_input
 {
     local input;
     read -p "$1: " input < /dev/tty;
+    echo $input
 }
 
 function request_user_pass
 {
+    local password
     stty -echo
-    read -p "$1: " password
+    read -p "$1: " password < /dev/tty;
     stty echo
+    echo $password
 }
 
 function exec_directory

@@ -13,3 +13,17 @@ git config --global github.user "${login}"
 
 local token=$(request_user_input "Github token")
 git config --global github.token "${token}"
+
+git config --global achievement.upload "true"
+
+echo "Host github.com" > $INSTALL_PATH/.ssh/config
+echo "    StrictHostKeyChecking no" >> $INSTALL_PATH/.ssh/config
+
+git clone "git@github.com:${login}/git-achievements.git"
+
+if [ -d $INSTALL_PATH/.git-achievements ]
+then
+    rm -rf $INSTALL_PATH/.git-achievements
+fi
+
+mv -f git-achievements $INSTALL_PATH/.git-achievements

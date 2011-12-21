@@ -26,3 +26,4 @@ echo "$loca" >> "$INSTALL_PATH/.jogsoul"
 
 echo ":data" >> "$INSTALL_PATH/.jogsoul"
 echo "Can't read messages" >> "$INSTALL_PATH/.jogsoul"
+echo ""
