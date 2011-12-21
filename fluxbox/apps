@@ -1,9 +1,0 @@
-[group] (workspace=[current])
- [app] (name=xterm)
-[end]
-[group] (workspace=[current])
- [app] (name=xpdf)
-[end]
-[app] (Gecko)
-[end]
-
