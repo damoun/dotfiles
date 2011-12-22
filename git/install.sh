@@ -21,9 +21,9 @@ echo "    StrictHostKeyChecking no" >> $INSTALL_PATH/.ssh/config
 
 git clone "git@github.com:${login}/git-achievements.git"
 
-if [ -d $INSTALL_PATH/.git-achievements ]
+if [ -d "$INSTALL_PATH/.git-achievements/" ]
 then
     rm -rf $INSTALL_PATH/.git-achievements
 fi
 
-mv -f git-achievements $INSTALL_PATH/.git-achievements
+mv -f git-achievements/ $INSTALL_PATH/.git-achievements
