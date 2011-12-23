@@ -11,7 +11,11 @@
           (lambda()
 	    (if (and
 		 (= (buffer-size) 0)
-		 (string-match "\\.h$" (buffer-file-name)))
+		 (or
+		  (string-match "\\.h$" (buffer-file-name))
+		  (or
+		   (string-match "\\.hh$" (buffer-file-name))
+		   (string-match "\\.hpp$" (buffer-file-name)))))
 		(progn (insert-protect-header)
 		       (goto-line 13)))))
 
@@ -22,4 +26,3 @@
 		 (= (buffer-size) 0)
 		 (string-match "\\main.c$" (buffer-file-name)))
 		(create-main))))
-

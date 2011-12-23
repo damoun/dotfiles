@@ -1,0 +1,11 @@
+(load "~/.emacs.d/auto-complete/popup.el")
+(load "~/.emacs.d/auto-complete/auto-complete.el")
+(load "~/.emacs.d/auto-complete/auto-complete-config.el")
+(load "~/.emacs.d/auto-complete/auto-complete-extension.el")
+(load "~/.emacs.d/auto-complete/auto-complete-semantic.el")
+
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete/ac-dict")
+(ac-config-default)
+(setq ac-delay 0.1)
+(setq ac-auto-start 1)
+(setq ac-quick-help-delay 0.1)

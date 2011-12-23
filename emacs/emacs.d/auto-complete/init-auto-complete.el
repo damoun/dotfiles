@@ -1,5 +1,0 @@
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete/ac-dict")
-(ac-config-default)
-(setq ac-delay 0.1)
-(setq ac-auto-start 1)
-(setq ac-quick-help-delay 0.1)

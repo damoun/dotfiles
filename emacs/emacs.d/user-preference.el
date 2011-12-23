@@ -1,8 +1,5 @@
 ;; delete space at the end line
-(add-hook 'c++-mode-hook '(lambda ()
-  (add-hook 'write-contents-hooks 'delete-trailing-whitespace nil t)))
-(add-hook   'c-mode-hook '(lambda ()
-  (add-hook 'write-contents-hooks 'delete-trailing-whitespace nil t)))
+(add-hook 'write-contents-hooks 'delete-trailing-whitespace nil t)
 
 ;; auto complete mini-buffer
 (icomplete-mode 1)
@@ -35,3 +32,6 @@
 (mouse-wheel-mode t)
 
 (put 'upcase-region 'disabled nil)
+
+;; Hide menu
+(menu-bar-mode)

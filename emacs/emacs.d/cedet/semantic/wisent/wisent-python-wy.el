@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2002, 2003, 2004, 2007 Richard Kim
 
-;; Author: Eric M. Ludlam <zappo@projectile.siege-engine.com>
-;; Created: 2010-08-22 20:55:22-0400
+;; Author: damoun <damoun@deathstar>
+;; Created: 2011-12-22 23:09:30+0100
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 
