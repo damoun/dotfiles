@@ -1,4 +1,6 @@
 #!/bin/bash
 
+rm -rf $INSTALL_PATH/.fonts
 cp -r fonts $INSTALL_PATH/.fonts
-cp -r gconf $INSTALL_PATH/.gconf
+
+gconftool-2 --load ./gnome-terminal-conf.xml
