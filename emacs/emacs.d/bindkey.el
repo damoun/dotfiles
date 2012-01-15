@@ -32,3 +32,9 @@
 ;; PuTTY fix. Ugly. Bad. But it works. (Good)
 (define-key global-map "\M-[1~" 'beginning-of-line)
 (define-key global-map [select] 'end-of-line)
+
+;; Tmux fix
+(define-key function-key-map (kbd "M-[ A") [C-up])
+(define-key function-key-map (kbd "M-[ B") [C-down])
+(define-key function-key-map (kbd "M-[ C") [C-right])
+(define-key function-key-map (kbd "M-[ D") [C-left])
