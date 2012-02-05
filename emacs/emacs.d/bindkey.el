@@ -1,12 +1,14 @@
-;; F1: collapse
-(add-hook 'c-mode-common-hook 'hs-minor-mode)
-(add-hook 'lisp-mode-hook 'hs-minor-mode)
-(add-hook 'emacs-lisp-mode-hook 'hs-minor-mode)
-(add-hook 'python-mode-hook 'hs-minor-mode)
-(global-set-key [f1] 'hs-hide-block)
+(global-set-key [f1] 'toggle-hiding)
+(global-set-key [f2] 'toggle-selective-display)
 
-;; F2: extend
-(global-set-key [f2] 'hs-show-block)
+(add-hook 'c-mode-common-hook   'hs-minor-mode)
+(add-hook 'c++-mode-common-hook   'hs-minor-mode)
+(add-hook 'emacs-lisp-mode-hook 'hs-minor-mode)
+(add-hook 'java-mode-hook       'hs-minor-mode)
+(add-hook 'lisp-mode-hook       'hs-minor-mode)
+(add-hook 'perl-mode-hook       'hs-minor-mode)
+(add-hook 'sh-mode-hook         'hs-minor-mode)
+(add-hook 'js-mode-hook         'hs-minor-mode)
 
 ;; F3: man
 (global-set-key [f3] 'vectra-man-on-word)
