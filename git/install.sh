@@ -2,21 +2,17 @@
 
 install_package "git"
 
-local username=$(request_user_input "Git real user name")
-git config --global user.name "${username}"
+local login=$(request_user_input "Github login")
+git config --global github.user "${login}"
 
 local email=$(request_user_input "Git email address")
 git config --global user.email "${email}"
 
-local login=$(request_user_input "Github login")
-git config --global github.user "${login}"
-
-local token=$(request_user_input "Github token")
-git config --global github.token "${token}"
+git config --global credential.helper cache
 
 git config --global achievement.upload "true"
 
-echo "Host github.com" > $INSTALL_PATH/.ssh/config
+echo "Host github.com" >> $INSTALL_PATH/.ssh/config
 echo "    StrictHostKeyChecking no" >> $INSTALL_PATH/.ssh/config
 
 chmod 600 ~/.ssh/config
