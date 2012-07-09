@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cpan Term::ExtendedColor
+sudo cpan Term::ExtendedColor
 git clone git://github.com/trapd00r/ls--.git
 cd ls--
 perl Makefile.PL
