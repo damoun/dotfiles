@@ -5,7 +5,7 @@
 ## Login   <plenar_d@epitech.net>
 ## 
 ## Started on  Tue May 25 14:07:58 2010 damien plenard
-## Last update Wed Dec 21 23:56:49 2011 Damien Plenard
+## Last update Mon Oct 15 13:47:59 2012 Damien Plenard
 ##
 
 alias ls='ls -Fh'
@@ -17,6 +17,7 @@ alias grep="grep --color"
 alias mkdir='nocorrect mkdir -p'
 alias find='noglob find'
 alias jogsoul="~/.jogsoul.d/jogsoul.pl ~/.jogsoul"
+alias open="gnome-open"
 
 if [ -d ~/.git-achievements ]
 then
