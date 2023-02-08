@@ -2,3 +2,4 @@ export DOTFILES=$HOME/.dotfiles
 export REPORTTIME="3"
 export TOUCHBAR_GIT_ENABLED="true"
 export ZSH_DISABLE_COMPFIX="false"
+export TMUX_PLUGIN_MANAGER_PATH=~/.tmux/plugins

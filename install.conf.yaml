@@ -11,7 +11,7 @@
     ~/.zshrc: 'zsh/zshrc'
     ~/.zsh_plugins.txt: 'zsh/zsh_plugins.txt'
     ~/.tmux.conf: 'tmux/tmux.conf'
-    ~/.tmux/plugins: 'tmux/plugins'
+    ~/.tmux/plugins/tpm: 'tmux/tpm'
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
