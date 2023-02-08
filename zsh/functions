@@ -1,0 +1,40 @@
+timezsh() {
+  shell=${1-$SHELL}
+  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+}
+
+is_macos() {
+    [[ $OSTYPE == darwin* ]] && return 0 || return 1
+}
+
+is_linux() {
+    [[ $OSTYPE == linux-gnu* ]] && return 0 || return 1
+}
+
+sshmulti() {
+  if [ -z "$1" ]; then
+    echo "please supply at least one server to connect to" >&2
+    exit 1
+  fi
+
+  target=multi-ssh-$PPID
+
+  if [ -z "$TMUX" ]; then
+      tmux new-session -d -s "$target"
+  fi
+
+  tmux new-window -n "$target" "ssh $1"
+  shift
+
+  for host in "$@"; do
+      tmux split-window -t ":$target" -h "ssh $host"
+      tmux select-layout -t ":$target" tiled #> /dev/null
+  done
+
+  tmux select-pane -t ":$target"
+  tmux set-window-option -t ":$target" synchronize-panes on #>/dev/null
+
+  if [ -z "$TMUX" ]; then
+      tmux attach-session -d -t ":$target"
+  fi
+}

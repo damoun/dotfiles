@@ -1,0 +1,2 @@
+alias http='python -m SimpleHTTPServer'
+alias reload="source ~/.zshenv && source ~/.zshrc"

@@ -1,0 +1,29 @@
+ohmyzsh/ohmyzsh path:lib
+ohmyzsh/ohmyzsh path:plugins/1password
+ohmyzsh/ohmyzsh path:plugins/aliases
+ohmyzsh/ohmyzsh path:plugins/ansible
+ohmyzsh/ohmyzsh path:plugins/battery
+ohmyzsh/ohmyzsh path:plugins/brew conditional:is_macos
+ohmyzsh/ohmyzsh path:plugins/capistrano
+ohmyzsh/ohmyzsh path:plugins/command-not-found
+ohmyzsh/ohmyzsh path:plugins/cp
+ohmyzsh/ohmyzsh path:plugins/debian conditional:is_linux
+ohmyzsh/ohmyzsh path:plugins/docker
+ohmyzsh/ohmyzsh path:plugins/extract
+ohmyzsh/ohmyzsh path:plugins/gcloud
+ohmyzsh/ohmyzsh path:plugins/git
+ohmyzsh/ohmyzsh path:plugins/github
+ohmyzsh/ohmyzsh path:plugins/gitignore
+ohmyzsh/ohmyzsh path:plugins/history
+ohmyzsh/ohmyzsh path:plugins/macos conditional:is_macos
+ohmyzsh/ohmyzsh path:plugins/rsync
+ohmyzsh/ohmyzsh path:plugins/sudo
+ohmyzsh/ohmyzsh path:plugins/tmux
+ohmyzsh/ohmyzsh path:plugins/urltools
+ohmyzsh/ohmyzsh path:plugins/vagrant
+
+dracula/zsh
+
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-history-substring-search
+zsh-users/zsh-syntax-highlighting
