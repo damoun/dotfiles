@@ -1,0 +1,18 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.gitconfig: 'git/gitconfig'
+    ~/.zshenv: 'zsh/zshenv'
+    ~/.zshrc: 'zsh/zshrc'
+    ~/.zsh_plugins.txt: 'zsh/zsh_plugins.txt'
+    ~/.tmux.conf: 'tmux/tmux.conf'
+    ~/.tmux/plugins: 'tmux/plugins'
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [~/.tmux/plugins/tpm/scripts/install_plugins.sh, Installing tmux plugins]
