@@ -1,9 +1,17 @@
-# dotfiles :desktop_computer:
+<h1 align="center">
+  dotfiles
+  <br>
+</h1>
 
-## Install
+<h4 align="center">My dotfiles managed by dotbot, antidote & tpm.</h4>
 
-```shell
-ln -s `pwd`/zshrc ~/.zshrc
-ln -s `pwd`/tmux.conf ~/.tmux.conf
-ln -s `pwd`/Xresources ~/.Xresources
+<p align="center">
+  <a href="#installing">Installing</a>
+</p>
+
+## Installing
+
+```sh
+git clone git@github.com:damoun/dotfiles.git ~/.dotfiles
+~/.dotfiles/install
 ```
