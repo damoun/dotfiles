@@ -9,5 +9,5 @@ else
   compinit -C
 fi
 
-source $DOTFILES/zsh/antidote.zsh
+source $DOTFILES/zsh/antidote/antidote.zsh
 antidote load
