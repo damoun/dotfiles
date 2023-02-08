@@ -1,0 +1,9 @@
+[init]
+	defaultBranch = main
+[user]
+	email = damien@plenard.me
+	name = Damien Plénard
+[pull]
+	rebase = true
+[includeIf "gitdir:~/Projects/molops.io"]
+    path = ~/Projects/molops.io/gitconfig
