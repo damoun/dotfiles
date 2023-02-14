@@ -18,6 +18,7 @@ ohmyzsh/ohmyzsh path:plugins/history
 ohmyzsh/ohmyzsh path:plugins/macos conditional:is_macos
 ohmyzsh/ohmyzsh path:plugins/rsync
 ohmyzsh/ohmyzsh path:plugins/sudo
+ohmyzsh/ohmyzsh path:plugins/terraform
 ohmyzsh/ohmyzsh path:plugins/tmux
 ohmyzsh/ohmyzsh path:plugins/urltools
 ohmyzsh/ohmyzsh path:plugins/vagrant
