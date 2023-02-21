@@ -2,8 +2,12 @@
     link:
       create: true
       relink: true
+    clean:
+      force: true
 
-- clean: ['~']
+- clean: 
+  - '~'
+  - '~/Projects'
 
 - link:
     ~/.gitconfig: 'git/gitconfig'
@@ -12,6 +16,7 @@
     ~/.zsh_plugins.txt: 'zsh/zsh_plugins.txt'
     ~/.tmux.conf: 'tmux/tmux.conf'
     ~/.tmux/plugins/tpm: 'tmux/tpm'
+    ~/Projects/github.com/damoun/dotfiles: '.'
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
