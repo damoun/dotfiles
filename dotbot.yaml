@@ -11,6 +11,7 @@
 
 - link:
     ~/.gitconfig: 'git/gitconfig'
+    ~/.gitignore: 'git/gitignore'
     ~/.zshenv: 'zsh/zshenv'
     ~/.zshrc: 'zsh/zshrc'
     ~/.zsh_plugins.txt: 'zsh/zsh_plugins.txt'

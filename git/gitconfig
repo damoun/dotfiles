@@ -7,3 +7,5 @@
 	rebase = true
 [includeIf "gitdir:~/Projects/molops.io"]
     path = ~/Projects/molops.io/gitconfig
+[core]
+	excludesfile = ~/.gitignore
