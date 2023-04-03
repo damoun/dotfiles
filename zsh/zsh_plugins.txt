@@ -22,6 +22,8 @@ ohmyzsh/ohmyzsh path:plugins/terraform
 ohmyzsh/ohmyzsh path:plugins/tmux
 ohmyzsh/ohmyzsh path:plugins/urltools
 ohmyzsh/ohmyzsh path:plugins/vagrant
+ohmyzsh/ohmyzsh path:plugins/kubectl
+ohmyzsh/ohmyzsh path:plugins/fluxcd
 
 dracula/zsh
 
