@@ -9,6 +9,10 @@
   - '~'
   - '~/Projects'
 
+- create:
+  - zsh/cache
+  - zsh/cache/completions
+
 - link:
     ~/.gitconfig: 'git/gitconfig'
     ~/.gitignore: 'git/gitignore'
