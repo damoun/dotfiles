@@ -7,3 +7,5 @@ export ZSH_DISABLE_COMPFIX="false"
 export TMUX_PLUGIN_MANAGER_PATH="~/.tmux/plugins"
 export YSU_MESSAGE_POSITION="after"
 export ANSIBLE_NOCOWS=1
+export ZSH="${HOME}/.dotfiles/zsh"
+export ZSH_CACHE_DIR="$ZSH/cache"
