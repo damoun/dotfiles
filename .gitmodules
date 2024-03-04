@@ -1,7 +1,6 @@
 [submodule "zsh/antidote"]
 	path = zsh/antidote
 	url = https://github.com/mattmc3/antidote.git
-        branch = v1.8.4
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
