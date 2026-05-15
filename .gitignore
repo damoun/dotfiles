@@ -2,3 +2,7 @@ zsh/cache
 zsh-*
 .zcompdump
 ohmyzsh
+
+# Nix
+result
+result-*
