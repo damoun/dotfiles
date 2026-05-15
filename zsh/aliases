@@ -1,3 +1,0 @@
-alias http='python -m SimpleHTTPServer'
-alias reload="source ~/.zshenv && source ~/.zshrc"
-alias rec="script -aq ~/term.log-$(date '+%Y%m%d-%H-%M')"
