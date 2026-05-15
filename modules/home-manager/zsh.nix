@@ -68,6 +68,9 @@ in
         export ZSH_DISABLE_COMPFIX="false"
         export YSU_MESSAGE_POSITION="after"
         export ANSIBLE_NOCOWS=1
+
+        # Use GPG Agent for SSH
+        export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
       ''
     ];
 
