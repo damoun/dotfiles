@@ -20,55 +20,56 @@ in
     shellAliases = {
       http = "python -m SimpleHTTPServer";
       reload = "source ~/.zshenv && source ~/.zshrc";
-      rec = "script -aq ~/term.log-$(date '+%Y%m%d-%H-%M')";
+      "rec" = "script -aq ~/term.log-$(date '+%Y%m%d-%H-%M')";
     };
 
-    initExtraFirst = ''
-      skip_global_compinit=1
-    '';
+    initContent = lib.mkMerge [
+      (lib.mkBefore ''
+        skip_global_compinit=1
+      '')
+      ''
+        # Functions
+        timezsh() {
+          shell=''${1-$SHELL}
+          for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+        }
 
-    initExtra = ''
-      # Functions
-      timezsh() {
-        shell=''${1-$SHELL}
-        for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
-      }
+        sshmulti() {
+          if [ -z "$1" ]; then
+            echo "please supply at least one server to connect to" >&2
+            exit 1
+          fi
 
-      sshmulti() {
-        if [ -z "$1" ]; then
-          echo "please supply at least one server to connect to" >&2
-          exit 1
-        fi
+          target=multi-ssh-$PPID
 
-        target=multi-ssh-$PPID
+          if [ -z "$TMUX" ]; then
+              tmux new-session -d -s "$target"
+          fi
 
-        if [ -z "$TMUX" ]; then
-            tmux new-session -d -s "$target"
-        fi
+          tmux new-window -n "$target" "ssh $1"
+          shift
 
-        tmux new-window -n "$target" "ssh $1"
-        shift
+          for host in "$@"; do
+              tmux split-window -t ":$target" -h "ssh $host"
+              tmux select-layout -t ":$target" tiled #> /dev/null
+          done
 
-        for host in "$@"; do
-            tmux split-window -t ":$target" -h "ssh $host"
-            tmux select-layout -t ":$target" tiled #> /dev/null
-        done
+          tmux select-pane -t ":$target"
+          tmux set-window-option -t ":$target" synchronize-panes on #>/dev/null
 
-        tmux select-pane -t ":$target"
-        tmux set-window-option -t ":$target" synchronize-panes on #>/dev/null
+          if [ -z "$TMUX" ]; then
+              tmux attach-session -d -t ":$target"
+          fi
+        }
 
-        if [ -z "$TMUX" ]; then
-            tmux attach-session -d -t ":$target"
-        fi
-      }
-
-      # Extra env vars from zshenv (some might be better in sessionVariables)
-      export REPORTTIME="3"
-      export TOUCHBAR_GIT_ENABLED="true"
-      export ZSH_DISABLE_COMPFIX="false"
-      export YSU_MESSAGE_POSITION="after"
-      export ANSIBLE_NOCOWS=1
-    '';
+        # Extra env vars from zshenv (some might be better in sessionVariables)
+        export REPORTTIME="3"
+        export TOUCHBAR_GIT_ENABLED="true"
+        export ZSH_DISABLE_COMPFIX="false"
+        export YSU_MESSAGE_POSITION="after"
+        export ANSIBLE_NOCOWS=1
+      ''
+    ];
 
     sessionVariables = {
       EDITOR = "nvim";

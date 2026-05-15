@@ -3,14 +3,16 @@
 {
   programs.git = {
     enable = true;
-    userName = "Damien Plénard";
-    userEmail = "damien@plenard.me";
     
-    extraConfig = {
+    settings = {
+      user = {
+        name = "Damien Plénard";
+        email = "damien@plenard.me";
+      };
       init.defaultBranch = "main";
       pull.rebase = true;
       # Include specific config for work projects if directory exists
-      includeIf."gitdir:~/Projects/molops.io/".path = "~/Projects/molops.io/gitconfig";
+      "includeIf \"gitdir:~/Projects/molops.io/\"".path = "~/Projects/molops.io/gitconfig";
     };
 
     ignores = [
