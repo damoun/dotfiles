@@ -8,7 +8,9 @@
       user = {
         name = "Damien Plénard";
         email = "damien@plenard.me";
+        signingkey = "0B7080F441792D01";
       };
+      commit.gpgsign = true;
       init.defaultBranch = "main";
       pull.rebase = true;
     };
