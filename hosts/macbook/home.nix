@@ -5,6 +5,7 @@
     ../../modules/home-manager/git.nix
     ../../modules/home-manager/zsh.nix
     ../../modules/home-manager/tmux.nix
+    ../../modules/home-manager/gpg.nix
   ];
 
   # home.username is set by nix-darwin if using the module usually,

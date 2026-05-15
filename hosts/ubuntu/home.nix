@@ -5,6 +5,7 @@
     ../../modules/home-manager/git.nix
     ../../modules/home-manager/zsh.nix
     ../../modules/home-manager/tmux.nix
+    ../../modules/home-manager/gpg.nix
   ];
 
   home.username = "damoun";
