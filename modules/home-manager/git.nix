@@ -11,8 +11,6 @@
       };
       init.defaultBranch = "main";
       pull.rebase = true;
-      # Include specific config for work projects if directory exists
-      "includeIf \"gitdir:~/Projects/molops.io/\"".path = "~/Projects/molops.io/gitconfig";
     };
 
     ignores = [
