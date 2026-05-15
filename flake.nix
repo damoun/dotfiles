@@ -1,5 +1,5 @@
 {
-  description: "Damoun's Cross-platform Dotfiles Flake";
+  description = "Damoun's Cross-platform Dotfiles Flake";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
