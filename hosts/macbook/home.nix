@@ -19,6 +19,7 @@
     jq
     htop
     tldr
+    gh
   ];
 
   home.stateVersion = "24.05";
