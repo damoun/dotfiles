@@ -12,6 +12,14 @@ My personal dotfiles, managed with [Nix](https://nixos.org/).
 
 ### Ubuntu
 
+#### Prerequisites (YubiKey/SmartCard support)
+Since `pcscd` is a hardware-level service, it must be installed via the system package manager:
+```bash
+sudo apt update && sudo apt install -y pcscd
+sudo systemctl enable --now pcscd
+```
+
+#### Apply configuration
 1. Install Nix: `curl -L https://nixos.org/nix/install | sh`
 2. Apply configuration:
    ```bash
