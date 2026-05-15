@@ -32,7 +32,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.damoun = import ./hosts/macbook/home.nix;
+          home-manager.users."damien.plenard" = import ./hosts/macbook/home.nix;
         }
       ];
     };
