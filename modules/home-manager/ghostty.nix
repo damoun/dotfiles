@@ -1,20 +1,25 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 let
-  # This is the version that the user said worked for the UI.
-  ghostty-wrapped = pkgs.symlinkJoin {
-    name = "ghostty";
-    paths = [ pkgs.ghostty ];
-    nativeBuildInputs = [ pkgs.makeWrapper ];
-    postBuild = ''
-      wrapProgram $out/bin/ghostty \
-        --set GSK_RENDERER gl
-    '';
-  };
+  isLinux = pkgs.stdenv.isLinux;
+
+  # Wrap ghostty on Linux to force the 'gl' renderer, fixing EGL display errors 
+  # common in GTK4 environments on some distributions.
+  ghostty-pkg = if isLinux then 
+    pkgs.symlinkJoin {
+      name = "ghostty";
+      paths = [ pkgs.ghostty ];
+      nativeBuildInputs = [ pkgs.makeWrapper ];
+      postBuild = ''
+        wrapProgram $out/bin/ghostty \
+          --set GSK_RENDERER gl
+      '';
+    }
+    else pkgs.ghostty;
 in
 {
   home.packages = [
-    ghostty-wrapped
+    ghostty-pkg
   ];
 
   home.file.".config/ghostty/config".text = ''
