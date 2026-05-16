@@ -25,6 +25,9 @@ in
 
     initContent = lib.mkMerge [
       (lib.mkBefore ''
+        export ZSH_CACHE_DIR="$HOME/.cache/zsh"
+        mkdir -p "$ZSH_CACHE_DIR/completions"
+
         autoload -Uz compinit
         compinit
         skip_global_compinit=1
@@ -78,6 +81,7 @@ in
 
     sessionVariables = {
       EDITOR = "nvim";
+      ZSH_CACHE_DIR = "$HOME/.cache/zsh";
     };
 
     antidote = {
