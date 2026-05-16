@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, config, ... }:
 
 let
   isDarwin = pkgs.stdenv.isDarwin;
@@ -7,6 +7,7 @@ in
 {
   programs.zsh = {
     enable = true;
+    dotDir = config.home.homeDirectory;
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
