@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   imports = [
@@ -17,6 +17,7 @@
     htop
     tldr
     gh
+    inputs.pass-cli.packages.${pkgs.system}.default
   ];
 
   # Let Home Manager install and manage itself.
