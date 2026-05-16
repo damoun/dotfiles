@@ -50,7 +50,7 @@ in
     name = "Ghostty";
     genericName = "Terminal Emulator";
     exec = "${ghostty-launcher}/bin/ghostty-launcher";
-    icon = "com.mitchellh.ghostty";
+    icon = "${pkgs.ghostty}/share/icons/hicolor/512x512/apps/com.mitchellh.ghostty.png";
     terminal = false;
     categories = [ "System" "TerminalEmulator" ];
     comment = "Ghostty terminal via nixGL";
