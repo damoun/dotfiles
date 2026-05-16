@@ -1,6 +1,0 @@
-[submodule "zsh/antidote"]
-	path = zsh/antidote
-	url = https://github.com/mattmc3/antidote.git
-[submodule "tmux/tpm"]
-	path = tmux/tpm
-	url = https://github.com/tmux-plugins/tpm
