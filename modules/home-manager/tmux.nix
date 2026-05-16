@@ -20,6 +20,8 @@
 
     extraConfig = ''
       set -g display-time 3000
+      set -g default-command "${pkgs.zsh}/bin/zsh"
+      set -g default-shell "${pkgs.zsh}/bin/zsh"
     '';
   };
 }
