@@ -21,7 +21,7 @@
     # Allow read-only git commands
     [[rule]]
     toolName = "run_shell_command"
-    commandRegex = "git (status|log|show|diff|branch|ls-files|rev-parse)"
+    commandRegex = "git (status|log|show|diff|branch|ls-files|rev-parse|fetch|checkout)"
     decision = "allow"
     priority = 100
 
