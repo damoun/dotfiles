@@ -16,8 +16,8 @@ in
     enableSshSupport = true;
     enableZshIntegration = true;
     
-    # Use native pinentry for macOS, curses for Linux
-    pinentry.package = if isDarwin then pkgs.pinentry_mac else pkgs.pinentry-curses;
+    # Use native pinentry for macOS, gnome3 for Linux
+    pinentry.package = if isDarwin then pkgs.pinentry_mac else pkgs.pinentry-gnome3;
     
     # Default cache time for normal GPG usage
     defaultCacheTtl = 3600;
