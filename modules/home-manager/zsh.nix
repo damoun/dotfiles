@@ -23,7 +23,12 @@ in
       "rec" = "script -aq ~/term.log-$(date '+%Y%m%d-%H-%M')";
     };
 
-    initContent = lib.mkMerge [
+    initExtraFirst = ''
+      autoload -Uz compinit
+      compinit
+    '';
+
+    initExtra = lib.mkMerge [
       (lib.mkBefore ''
         skip_global_compinit=1
       '')
