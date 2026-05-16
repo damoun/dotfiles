@@ -8,6 +8,9 @@
     - Commit often and in small, logical increments.
     - Never use `git add .`, `git add -A`, or similar commands. Always selectively add specific files.
     - Finalize changes by pushing the branch and opening a Pull Request.
+
+    ## Tooling Preferences
+    - Prefer using the GitHub CLI (`gh`) over `web_fetch` for interacting with GitHub (viewing logs, managing repositories, fetching alerts, etc.).
   '';
 
   home.file.".gemini/policies/shell-safety.toml".text = ''
