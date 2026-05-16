@@ -7,6 +7,7 @@
     - Always start working in a dedicated branch branched off from a freshly fetched `origin/main`.
     - Commit often and in small, logical increments.
     - Never use `git add .`, `git add -A`, or similar commands. Always selectively add specific files.
+    - Finalize changes by pushing the branch and opening a Pull Request.
   '';
 
   home.file.".gemini/policies/shell-safety.toml".text = ''
